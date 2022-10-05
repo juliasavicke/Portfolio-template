@@ -3,3 +3,10 @@
 body {
   background-color: #fff;
 }
+.contact {
+  background-color: v.$secondary-bg-color;
+  .container {
+    display: grid;
+    color: white;
+  }
+}

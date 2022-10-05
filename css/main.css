@@ -83,4 +83,12 @@ p {
 
 body {
   background-color: #fff;
+}
+
+.contact {
+  background-color: #28293e;
+}
+.contact .container {
+  display: grid;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
