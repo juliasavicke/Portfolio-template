@@ -2,11 +2,69 @@
 @use "vars" as v;
 body {
   background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.container {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
 .contact {
+  padding-top: 80px;
+  padding-bottom: 76px;
   background-color: v.$secondary-bg-color;
   .container {
     display: grid;
     color: white;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .textInput {
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px 16px 7px;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(57, 20, 0, 0.64);
+        &::placeholder {
+          color: rgba(57, 20, 0, 0.64);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 16px;
+          line-height: 32px;
+        }
+        &--select {
+          padding: 14px 16px 13px;
+        }
+        &.area {
+          min-height: 96px;
+          resize: vertical;
+        }
+      }
+      .btn--form {
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 16px 30px;
+        background-color: #ef6d58;
+        color: #fff;
+        align-self: flex-end;
+        margin-top: 16px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  .contact-form-container {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 57px 28px 48px;
+    .title {
+      font-size: 34px;
+      line-height: 32px;
+      color: v.$secondary-bg-color;
+      margin-top: 0;
+      margin-top: 28px;
+    }
   }
 }
